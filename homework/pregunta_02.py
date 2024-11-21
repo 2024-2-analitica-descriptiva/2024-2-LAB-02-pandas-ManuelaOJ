@@ -14,3 +14,10 @@ def pregunta_02():
     4
 
     """
+
+    import pandas as pd
+    tbl0 = pd.read_csv('files/input/tbl0.tsv', sep='\t')
+    col= len(tbl0.columns)
+    return col  
+if __name__ == '__main__':
+    print(pregunta_02())
